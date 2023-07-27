@@ -1,4 +1,4 @@
-MAN PAGE: printChar
+MAN PAGE: printChar:
 SYNOPSIS
     #include <main.h>
 
@@ -15,7 +15,7 @@ RETURN VALUE
 
 /**********************************************************************************************************************************/
 
-MAN PAGE: printString
+printString:
 YNOPSIS
     #include <main.h>
 
@@ -32,7 +32,7 @@ RETURN VALUE
 
 /**********************************************************************************************************************************/
 
-MAN PAGE: printPercent
+printPercent:
 SYNOPSIS
     #include <main.h>
 
