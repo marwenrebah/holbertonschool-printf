@@ -1,12 +1,12 @@
 #include "main.h"
 /**
  * print_percent - prints percent.
- * @List: arg
+ * @Project: arg
  * Return: 1
 */
-int print_percent(va_list List)
+int print_percent(va_list Project)
 {
-(void)List;
+(void)Project;
 _putchar('%');
 return (1);
 }

@@ -5,9 +5,9 @@
  * @List: Va_list containing the char to print as the next element.
  * Return: The number of bytes printed.
 */
-int print_char(va_list List)
+int print_char(va_list Project)
 {
-char c = va_arg(List, int);
+char c = va_arg(Project, int);
 int count = 0, retval;
 retval = _putchar(c);
 if (retval == -1)
