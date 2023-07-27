@@ -7,7 +7,7 @@
 int (*select_func(const char *C))(va_list)
 {
 int i;
-Selecter_t types[] = {
+selecter_t types[] = {
 {"s", print_string},
 {"c", print_char},
 {"%", print_percent},
