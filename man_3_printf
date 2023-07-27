@@ -1,4 +1,4 @@
-MAN PAGE: printChar()
+MAN PAGE: printChar
 SYNOPSIS
     #include <main.h>
 
@@ -13,18 +13,9 @@ PARAMETERS
 RETURN VALUE
     The function returns the number of bytes written, which is always 1, or -1 if an error occurs.
 
-EXAMPLES
-    #include <main.h>
-
-    int main() {
-        char ch = 'A';
-        int bytes_written = printChar(ch);
-        return 0;
-    }
-
 /**********************************************************************************************************************************/
 
-MAN PAGE: printString()
+MAN PAGE: printString
 YNOPSIS
     #include <main.h>
 
@@ -39,22 +30,13 @@ PARAMETERS
 RETURN VALUE
     The function returns the total number of bytes written, i.e., the length of the string, or -1 if an error occurs.
 
-EXAMPLES
-    #include <main.h>
-
-    int main() {
-        const char *str = "Hello, World!";
-        int bytes_written = printString(str);
-        return 0;
-    }
-
 /**********************************************************************************************************************************/
 
-MAN PAGE: printPercent()
+MAN PAGE: printPercent
 SYNOPSIS
     #include <main.h>
 
-    int printPercent();
+    int printPercent(%);
 
 DESCRIPTION
     The printPercent function prints a percent character (%) to the standard output (stdout).
@@ -65,10 +47,19 @@ PARAMETERS
 RETURN VALUE
     The function returns the number of bytes written, which is always 1, or -1 if an error occurs.
 
-EXAMPLES
+    /**********************************************************************************************************************************/
+
+    MAN PAGE: printDecimal
+    SYNOPSIS
     #include <main.h>
 
-    int main() {
-        int bytes_written = printPercent();
-        return 0;
-    }
+    int printDecimal(int d);
+
+DESCRIPTION
+    The printDecimal function is used to print an integer `d` as a decimal number to the standard output (stdout). It breaks down the integer `d` into its individual decimal digits and prints them one by one.
+
+PARAMETERS
+    d - The integer value to be printed as a decimal number.
+
+RETURN VALUE
+    The function returns the total number of characters printed to the standard output. If an error occurs during printing, the function returns -1.
