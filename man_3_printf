@@ -1,0 +1,74 @@
+MAN PAGE: printChar()
+SYNOPSIS
+    #include <main.h>
+
+    int printChar(char c);
+
+DESCRIPTION
+    The printChar function prints a single character c to the standard output (stdout).
+
+PARAMETERS
+    c - The character to be printed.
+
+RETURN VALUE
+    The function returns the number of bytes written, which is always 1, or -1 if an error occurs.
+
+EXAMPLES
+    #include <main.h>
+
+    int main() {
+        char ch = 'A';
+        int bytes_written = printChar(ch);
+        return 0;
+    }
+
+/**********************************************************************************************************************************/
+
+MAN PAGE: printString()
+YNOPSIS
+    #include <main.h>
+
+    int printString(const char *s);
+
+DESCRIPTION
+    The printString function prints a null-terminated string s to the standard output (stdout).
+
+PARAMETERS
+    s - The null-terminated string to be printed.
+
+RETURN VALUE
+    The function returns the total number of bytes written, i.e., the length of the string, or -1 if an error occurs.
+
+EXAMPLES
+    #include <main.h>
+
+    int main() {
+        const char *str = "Hello, World!";
+        int bytes_written = printString(str);
+        return 0;
+    }
+
+/**********************************************************************************************************************************/
+
+MAN PAGE: printPercent()
+SYNOPSIS
+    #include <main.h>
+
+    int printPercent();
+
+DESCRIPTION
+    The printPercent function prints a percent character (%) to the standard output (stdout).
+
+PARAMETERS
+    None.
+
+RETURN VALUE
+    The function returns the number of bytes written, which is always 1, or -1 if an error occurs.
+
+EXAMPLES
+    #include <main.h>
+
+    int main() {
+        int bytes_written = printPercent();
+        return 0;
+    }
