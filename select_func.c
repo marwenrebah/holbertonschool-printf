@@ -11,6 +11,8 @@ selecter_t types[] = {
 {"s", print_string},
 {"c", print_char},
 {"%", print_percent},
+{"d", print_decimal},
+{"i", print_integer},
 {NULL, NULL},
 };
 for (i = 0; types[i].x; i++)

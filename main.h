@@ -24,5 +24,7 @@ int print_percent(va_list Project);
 int _printf(const char *format, ...);
 int _putchar(char c);
 int (*select_func(const char *C))(va_list);
+int print_decimal(va_list Project);
+int print_integer(va_list Project);
 
 #endif
