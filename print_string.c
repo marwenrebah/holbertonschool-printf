@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_string - Prints a string.
- * @List: Va_list containing the string or char to print as the next element.
+ * @Project: Va_list containing the string or char to print as the next element.
  * Return: The number of bytes printed
 */
 int print_string(va_list Project)

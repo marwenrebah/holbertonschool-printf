@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * print_char - Prints a char.
- * @List: Va_list containing the char to print as the next element.
+ * @Project: Va_list containing the char to print as the next element.
  * Return: The number of bytes printed.
 */
 int print_char(va_list Project)
