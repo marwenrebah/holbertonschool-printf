@@ -18,8 +18,6 @@ char *x;
 int (*f)(va_list);
 } selecter_t;
 
-/* Functions.c */
-
 int print_char(va_list Project);
 int print_string(va_list Project);
 int print_percent(va_list Project);
