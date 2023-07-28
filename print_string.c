@@ -9,13 +9,13 @@ int print_string(va_list Project)
 {
 char *str = va_arg(Project, char *);
 int count = 0;
-int retval;
+int RetVal;
 if (!str)
 str = "(null)";
 while (*str)
 {
 retval = _putchar(*str);
-if (retval == -1)
+if (RetVal == -1)
 return (-1);
 count++;
 str++;
