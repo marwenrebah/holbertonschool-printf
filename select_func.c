@@ -19,5 +19,5 @@ for (i = 0; i < 5; i++)
 if ((tab + i)->c == ch)
 return ((tab + i)->f);
 }
-return(NULL);
+return (NULL);
 }
