@@ -7,12 +7,12 @@
 int (*select_func(char ch))(va_list args)
 {
 int i;
-selecter_t types[] = {
-{"c", print_char},
-{"s", print_string},
-{"%", print_percent},
-{"d", print_decimal},
-{"i", print_int},
+selecter_t tab[] = {
+{'c', print_char},
+{'s', print_string},
+{'%', print_percent},
+{'d', print_decimal},
+{'i', print_int},
 };
 for (i = 0; i < 5; i++)
 {

@@ -23,7 +23,7 @@ char  *s;
 int i = 0;
 s = va_arg(args, char *);
 if (!s)
-s = '(null)';
+s = "(null)";
 while (*(s + i))
 {
 i++;

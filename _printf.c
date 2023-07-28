@@ -28,7 +28,7 @@ int _printf(const char *format, ...)
 				count += _putchar('%');
 				continue;
 			}
-			print_func = get_func(*p);
+			print_func = select_func(*p);
 			if (print_func)
 				count += print_func(args);
 			else
