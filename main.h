@@ -1,11 +1,11 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <unistd.h>
+#include "limits.h"
 #include <stdarg.h>
-#include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
-#include <limits.h>
+#include <unistd.h>
 
 /**
  * struct select - connect specifier with correct print function.
@@ -20,12 +20,11 @@ int (*f)(va_list);
 
 int print_char(va_list Project);
 int print_string(va_list Project);
-int print_percent(va_list Project);
 int _printf(const char *format, ...);
-int _putchar(char c);
+int _putchar(char);
 int print_int(va_list);
 int (*select_func(char ch))(va_list);
 int print_decimal(va_list);
-int print_percent(__attribute__((unused)) va_list);
+int print_percent(__attribute__ ((unused)) va_list);
 
 #endif
