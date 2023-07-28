@@ -6,11 +6,11 @@
 */
 int _printf(const char *format, ...)
 {
-va_list Project;
+va_list args;
 int (*print_func)(va_list);
 int count = 0;
 const char *p;
-va_start(Project, format);
+va_start(args, format);
 if (!fomrat || (format[0] == '%' && !format[1]))
 return (-1);
 if (format[0] == '%' && format[1] == ' ' && !format[2])
@@ -27,13 +27,13 @@ continue;
 }
 print_func = select_func(*p);
 if (print_func)
-count += print_func(Project);
+count += print_func(args);
 else
 count += _printf("%%%c", *p);
 }
 else
 count += _putchar(*p);
 }
-va_end(Project);
+va_end(args);
 return (count);
 }

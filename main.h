@@ -18,8 +18,8 @@ char *c;
 int (*f)(va_list);
 } selecter_t;
 
-int print_char(va_list Project);
-int print_string(va_list Project);
+int print_char(va_list);
+int print_string(va_list);
 int _printf(const char *format, ...);
 int _putchar(char);
 int print_int(va_list);

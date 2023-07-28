@@ -4,7 +4,7 @@
  * @ch: givenn character
  * Return: printed characters
 */
-int (*select_func(char ch))(va_list Project)
+int (*select_func(char ch))(va_list args)
 {
 int i;
 selecter_t types[] = {

@@ -1,30 +1,30 @@
 #include "main.h"
 
 /**
- * printchar - prints a char
- * @Project: the char to print 
+ * print_char - prints a char
+ *@args: the char to print
  * Return: integer
 */
-int print_char(va_list Project)
+int print_char(va_list args)
 {
 char c;
-c = va_arg(Project, int);
+c = va_arg(args, int);
 _putchar(c);
 return (1);
 }
 /**
  * print_string - prints a string
- * @Project: string
+ * @args: string
  * Return: integer
 */
-int print_string(va_list Project)
+int print_string(va_list args)
 {
 char  *s;
 int i = 0;
-s = va_arg(Project, char *);
+s = va_arg(args, char *);
 if (!s)
 s = '(null)';
-while (*(s + i));
+while (*(s + i))
 {
 i++;
 }
@@ -32,21 +32,21 @@ return (i);
 }
 /**
  * print_percent - print %
- * @Project: va_list
+ * @args: va_list
  * Return: count
 */
-int print_percent(va_list Project)
+int print_percent(va_list args)
 {
-(void)Project;
+(void)args;
 _putchar('%');
-return(1);
+return (1);
 }
 /**
  * print_int - print an integer
- * @Project: va_list
+ * @args: va_list
  * Return: count
 */
-int print_int(va_list Project)
+int print_int(va_list args)
 {
-return (print_decimal(Project));
+return (print_decimal(args));
 }
