@@ -1,61 +1,52 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
- * printChar - prints a char
- * @c: character
+ * printchar - prints a char
+ * @Project: the char to print 
  * Return: integer
 */
-int printChar(char c)
+int print_char(va_list Project)
 {
-write(1, &c, 1);
+char c;
+c = va_arg(Project, int);
+_putchar(c);
 return (1);
 }
 /**
- * printString - prints a string
- * @s: string
+ * print_string - prints a string
+ * @Project: string
  * Return: integer
 */
-int printString(char *s)
+int print_string(va_list Project)
 {
-int i;
-for (i = 0; s[i] != '\0'; i++)
-printChar(s[i]);
+char  *s;
+int i = 0;
+s = va_arg(Project, char *);
+if (!s)
+s = '(null)';
+while (*(s + i));
+{
+i++;
+}
 return (i);
 }
 /**
- * printDecimal - prints a decimal
- * @d: decimal
- * Return: integer
+ * print_percent - print %
+ * @Project: va_list
+ * Return: count
 */
-int printDecimal(int d)
+int print_percent(va_list Project)
 {
-int count = 0;
-char c;
-int divisor = 1;
-int tmp;
-if (d < 0)
+(void)Project;
+_putchar('%');
+return(1);
+}
+/**
+ * print_int - print an integer
+ * @Project: va_list
+ * Return: count
+*/
+int print_int(va_list Project)
 {
-write(1, "-", 1);
-count += 1;
-d = -d;
-}
-while (d / divisor >= 10)
-divisor *= 10;
-while (divisor != 0)
-{
-tmp = d / divisor;
-d = d % divisor;
-c = tmp + '\0';
-write(1, &c, 1);
-count += 1;
-divisor /= 10;
-}
-return (count);
-}
-
-
-{
-    /* code */
-}
-
+return (print_decimal(Project));
 }

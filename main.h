@@ -9,12 +9,12 @@
 
 /**
  * struct select - connect specifier with correct print function.
- * @f: a function pointer to the print functions.
- * @x: the convertion specifier.
+ * @c: char
+ * @f: required func
 */
 typedef struct select
 {
-char *x;
+char *c;
 int (*f)(va_list);
 } selecter_t;
 
@@ -23,8 +23,9 @@ int print_string(va_list Project);
 int print_percent(va_list Project);
 int _printf(const char *format, ...);
 int _putchar(char c);
-int (*select_func(const char *C))(va_list);
-int print_decimal(va_list Project);
-int print_integer(va_list Project);
+int print_int(va_list);
+int (*select_func(char ch))(va_list);
+int print_decimal(va_list);
+int print_percent(__attribute__((unused)) va_list);
 
 #endif

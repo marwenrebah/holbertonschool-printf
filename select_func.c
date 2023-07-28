@@ -1,24 +1,23 @@
 #include "main.h"
 /**
  * select_func - determine which print function to use.
- * @C: identifies the type of the variable to print.
- * Return: pointer to the matching print function.
+ * @ch: givenn character
+ * Return: printed characters
 */
-int (*select_func(const char *C))(va_list)
+int (*select_func(char ch))(va_list Project)
 {
 int i;
 selecter_t types[] = {
-{"s", print_string},
 {"c", print_char},
+{"s", print_string},
+{"%", print_percent},
 {"d", print_decimal},
 {"i", print_integer},
-{"%", print_percent},
-{NULL, NULL},
 };
-for (i = 0; types[i].X; i++)
+for (i = 0; i < 5; i++)
 {
-if (*C == types[i].X[0])
-return (types[i].f);
+if ((tab + i)->c == ch)
+return ((tab + i)->f);
 }
-return (NULL);
+return(NULL);
 }
