@@ -6,42 +6,34 @@
 */
 int _printf(const char *format, ...)
 {
-int i = 0;
 va_list Project;
-int (*function)(va_list) = NULL;
-if (format == NULL || (format[0] == '%' && format[1] == '\0'))
-return (-1);
+int (*print_func)(va_list);
+int count = 0;
+const char *p;
 va_start(Project, format);
-while (*format)
-{
-if (*format == '%' && *(format + 1) != '%')
-{
-format++;
-function = select_func(format);
-if (*(format) == '\0')
+if (!fomrat || (format[0] == '%' && !format[1]))
 return (-1);
-else if (function == NULL)
+if (format[0] == '%' && format[1] == ' ' && !format[2])
+return (-1);
+for (p = format; *p != '\0'; p++)
 {
-_putchar((*format - 1));
-_putchar(*format);
-i += 2;
+if (*p == '%')
+{
+p++;
+if (*p == '%')
+{
+count += _putchar('%');
+continue;
+}
+print_func = select_func(*p);
+if (print_func)
+count += print_func(Project);
+else
+count += _printf("%%%c", *p);
 }
 else
-i += function(Project);
-}
-else if (*format == '%' && *(format + 1) == '%')
-{
-format++;
-_putchar('%');
-i++;
-}
-else
-{
-_putchar(*format);
-i++;
-}
-format++;
+count += _putchar(*p);
 }
 va_end(Project);
-return (i);
+return (count);
 }
