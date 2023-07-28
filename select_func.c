@@ -12,7 +12,7 @@ selecter_t types[] = {
 {"s", print_string},
 {"%", print_percent},
 {"d", print_decimal},
-{"i", print_integer},
+{"i", print_int},
 };
 for (i = 0; i < 5; i++)
 {
