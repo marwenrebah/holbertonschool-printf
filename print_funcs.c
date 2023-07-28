@@ -26,6 +26,7 @@ if (!s)
 s = "(null)";
 while (*(s + i))
 {
+_putchar(*(s + i));
 i++;
 }
 return (i);
