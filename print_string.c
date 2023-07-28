@@ -14,7 +14,7 @@ if (!str)
 str = "(null)";
 while (*str)
 {
-retval = _putchar(*str);
+RetVal = _putchar(*str);
 if (RetVal == -1)
 return (-1);
 count++;

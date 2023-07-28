@@ -10,14 +10,14 @@ int i;
 selecter_t types[] = {
 {"s", print_string},
 {"c", print_char},
-{"%", print_percent},
 {"d", print_decimal},
 {"i", print_integer},
+{"%", print_percent},
 {NULL, NULL},
 };
-for (i = 0; types[i].x; i++)
+for (i = 0; types[i].X; i++)
 {
-if (*C == types[i].x[0])
+if (*C == types[i].X[0])
 return (types[i].f);
 }
 return (NULL);
