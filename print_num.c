@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * print_numbers - prints the number
+ * print_num - prints the number
  * depending on its sign
  * @n: the given nubmer to print
 * Return: count
 */
-int print_numbers(int n)
+int print_num(int n)
 {
 int i, k = 0, j = 1, count = 0, f = n;
 while (f /= 10)
