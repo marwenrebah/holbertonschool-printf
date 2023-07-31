@@ -1,5 +1,5 @@
 <h1 align="center" style="color:#0000FF">Hi 👨🏻‍💻, I'm Marwen Rebah</h1>
-<img align="center" width="595" alt="Your paragraph text" src="https://github.com/marwenrebah/holbertonschool-printf/assets/133456502/5d33df7a-b444-4ec4-a3db-bfc4b7ab6b84">
+<p align="center"><img align="center" width="595" alt="Your paragraph text" src="https://github.com/marwenrebah/holbertonschool-printf/assets/133456502/5d33df7a-b444-4ec4-a3db-bfc4b7ab6b84"><p>
 
 <h1 style="color:#0000FF">Printf</h1>
 <p>My first project at Holberton School, The printf project is a Low-Level Programming project writen in C language.</p>
