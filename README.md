@@ -14,7 +14,7 @@
 | d   | print_integer |
 
 <h1>Files</h1>
-<h2>These 3 functions are the bases for this project:</h2>
+<p>These 3 functions are the bases for this project:</p>
 <p>1- Printf: Is the frontend of all the algorithm, so is the prototype, and just receive the variables.</p>
 <p>2- Print function: Is the controller for the string and the formats.</p>
 <p>3- Select function: Compare a list of possible specifiers with the current pattern, and return the corresponding function.</p>
