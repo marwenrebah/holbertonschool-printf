@@ -6,17 +6,24 @@
 <p>My first project at Holberton School, The printf project is a Low-Level Programming project writen in C language.</p>
 <h1>Patterns</h1>
 
-| Files      | Description |
-| ----------- | ----------- |
-| s      | print_string       |
-| c   | print_char        |
-| i | print_integer	|
-| d   | print_integer |
+| Specifiers      | Functions | Description |
+| ----------- | ----------- | ----------|
+| s      | print_string       | print a string|
+| c   | print_char        | print just a char|
+| i | print_integer	| print a number  |
+| d   | print_integer | print a number |
 
 <h1>Files</h1>
 <p>These 3 functions are the bases for this project:</p>
 <p>1- Printf: Is the frontend of all the algorithm, so is the prototype, and just receive the variables.</p>
 <p>2- Print function: Is the controller for the string and the formats.</p>
 <p>3- Select function: Compare a list of possible specifiers with the current pattern, and return the corresponding function.</p>
+
+| Files      | Description |
+| ----------- | ----------- |
+| _printf.c      | Entry point for the printf.     |
+| main.h   | Header files for the the whole project.        |
+
+
 <h2 align="center">Languages and Tools:</h2>
 <p align="center"> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> </p>
