@@ -3,7 +3,8 @@
 ![Printf!](https://github.com/marwenrebah/holbertonschool-printf/assets/133456502/9e798d95-b20e-4d86-9dbc-c3b3d57a9d35)
 
 <h1>Printf</h1>
-<p>My first project at Holberton School, The printf project is a Low-Level Programming project writen in C language.</p>
+<p>My first project at Holberton School, The printf project is a Low-Level Programming project writen in C language.<br>
+the function receives a format (const char *format) and a list of arguments . So printf inside, take the string format and search for specific patterns, then the pattern that was found it is passed to other function that prints the match pattern.</p>
 <h1>Patterns</h1>
 
 | Specifiers      | Functions | Description |
