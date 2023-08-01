@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_char - prints a char
+ * print_char - prints a char.
  *@args: the char to print
  * Return: integer
 */
