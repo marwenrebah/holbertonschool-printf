@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 /**
- * struct select - connect specifier with correct print function.
+ * struct select - connect specifier with correct print function
  * @c: char
  * @f: required func
 */
