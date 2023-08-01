@@ -62,4 +62,4 @@ PARAMETERS
     d - The integer value to be printed as a decimal number.
 
 RETURN VALUE
-    The function returns the total number of characters printed to the standard output. If an error occurs during printing, the function returns -1.
+    The function returns the total number of characters printed to the standard output. If an error occurs during printing,, the function returns -1.
