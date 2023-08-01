@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_decimal - prints a decimal
+ * print_decimal - prints a decimal.
  * @Project: arg
  * Return: count.
 */
