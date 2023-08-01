@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * select_func - determine which print function to use.
+ * select_func - determine which print function to use
  * @ch: givenn character
  * Return: printed characters
 */
