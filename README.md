@@ -25,6 +25,12 @@ the function receives a format (const char *format) and a list of arguments, So 
 | _printf.c      | Entry point for the printf.     |
 | main.h   | Header files for the the whole project.        |
 
+<h1>Description</h1>
+<p> 1 - The function iterates over the characters in the format string, processing each character one by one.<br>
+2 - When encountering a % character, the function checks the next character to determine if it is a format specifier or an escaped %.<br>
+3 - If a valid format specifier is found (e.g., %d, %s, %c), the corresponding print function is called to handle the specific data type.<br>
+4 - If an invalid format specifier is encountered, the function prints the previous % character and the invalid specifier character as regular characters.<br>
+5 - The function uses variable arguments (variadic function) provided by the stdarg.h library to handle the variable number of arguments passed after the format string.<br> </p>
 
 <h2 align="center">Languages and Tools:</h2>
 <p align="center"> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> </p>
