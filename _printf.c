@@ -18,7 +18,7 @@ while (*format)
 if (*format == '%' && *(format + 1) != '%')
 {
 format++;
-function = select_func(format);
+function = select_func(*format);
 if (*(format) == '\0')
 return (-1);
 else if (function == NULL)
