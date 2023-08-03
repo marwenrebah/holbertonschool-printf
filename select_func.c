@@ -13,7 +13,7 @@ selecter_t tab[] = {
 {'%', print_percent},
 {'d', print_decimal},
 {'i', print_int},
-{NULL, NULL},
+{'\0', NULL},
 };
 for (i = 0; i < 5; i++)
 {
