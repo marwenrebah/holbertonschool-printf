@@ -1,8 +1,8 @@
+# Hi 👨🏻‍💻, I'm Marwen Rebah
+
 <div align="center">
   <img src="https://github.com/marwenrebah/holbertonschool-printf/assets/133456502/9e798d95-b20e-4d86-9dbc-c3b3d57a9d35" alt="Printf!"/>
 </div>
-
-# Hi 👨🏻‍💻, I'm Marwen Rebah
 
 ## :rocket: Printf
 
@@ -42,7 +42,7 @@ The following three functions are the foundation of this project:
 
 <p align="center">
   <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> 🚀
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> 
   </a>
 </p>
 
