@@ -1,12 +1,14 @@
+<div align="center">
+  <img src="https://github.com/marwenrebah/holbertonschool-printf/assets/133456502/9e798d95-b20e-4d86-9dbc-c3b3d57a9d35" alt="Printf!"/>
+</div>
+
 # Hi 👨🏻‍💻, I'm Marwen Rebah
 
-![Printf!](https://github.com/marwenrebah/holbertonschool-printf/assets/133456502/9e798d95-b20e-4d86-9dbc-c3b3d57a9d35)
-
-## Printf
+## :rocket: Printf
 
 My first project at Holberton School, the `printf` project is a Low-Level Programming project written in C language. The function receives a format (`const char *format`) and a list of arguments. Inside `printf`, the string format is analyzed for specific patterns. The matched pattern is then passed to another function that prints the corresponding output.
 
-## Patterns
+## :dart: Patterns
 
 | Specifiers | Functions       | Description    |
 |------------|-----------------|----------------|
@@ -15,7 +17,7 @@ My first project at Holberton School, the `printf` project is a Low-Level Progra
 | i          | print_integer   | print an integer |
 | d          | print_integer   | print an integer |
 
-## Files
+## :file_folder: Files
 
 The following three functions are the foundation of this project:
 
@@ -28,7 +30,7 @@ The following three functions are the foundation of this project:
 | _printf.c   | Entry point for the `printf`.   |
 | main.h      | Header files for the entire project|
 
-## Description
+## :memo: Description
 
 1. The function iterates over the characters in the format string, processing each character one by one.
 2. When encountering a `%` character, the function checks the next character to determine if it is a format specifier or an escaped `%`.
@@ -36,13 +38,17 @@ The following three functions are the foundation of this project:
 4. If an invalid format specifier is encountered, the function prints the previous `%` character and the invalid specifier character as regular characters.
 5. The function uses variable arguments (variadic function) provided by the `stdarg.h` library to handle the variable number of arguments passed after the format string.
 
-## Languages and Tools
+## :toolbox: Languages and Tools
 
-🚀 [C Programming](https://www.cprogramming.com/)
+<p align="center">
+  <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> 🚀
+  </a>
+</p>
 
 ---
 
-Authors:
-🚀 Marwen Rebah
-📧 Email: 6863@holbertonstudents.com
-👻 Github: [https://github.com/marwenrebah](https://github.com/marwenrebah)
+**Authors:**
+🚀 Marwen Rebah<br>
+📧 Email: 6863@holbertonstudents.com<br>
+👻 Github: [https://github.com/marwenrebah](https://github.com/marwenrebah)<br>
