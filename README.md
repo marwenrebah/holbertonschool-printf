@@ -48,7 +48,7 @@ The following three functions are the foundation of this project:
 
 ---
 
-**Authors:**
+## 👥 Author
 🚀 Marwen Rebah<br>
 📧 Email: 6863@holbertonstudents.com<br>
-👻 Github: [https://github.com/marwenrebah](https://github.com/marwenrebah)<br>
+👻 Github: https://github.com/marwenrebah
